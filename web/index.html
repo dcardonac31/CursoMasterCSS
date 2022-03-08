@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,120 +9,44 @@
 </head>
 
 <body>
-    <h1>Titulo de mi web</h1>
-    <h2>Bienvenidos a mi web</h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-    </p>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-    </p>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
-        Remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-    </p>
+    <!-- Encabezado -->
+    <h1>Mi primera web</h1>
 
-    <hr/>
-        <h2>Imagenes en HTML</h2>
-        <img src="./imagenes/imagen1.jpg" alt="Universo1" title="Universo1" width="350">
-        <img src="./imagenes/imagen2.jpg" alt="Universo2" title="Universo2" width="350">
-        <img src="./imagenes/imagen3.jpg" alt="Universo3" title="Universo3" width="350">
-        <img src="./imagenes/imagen4.jpg" alt="Universo4" title="Universo4" width="350">
-        <img src="./imagenes/imagen1.jpg" alt="Universo1" title="Universo1" width="350">
-        <img src="./imagenes/imagen2.jpg" alt="Universo2" title="Universo2" width="350">
-    <hr/>
-    
-    <h3>Tercer encabezado de la página</h3>
+    <!-- Menu -->
+    <ul>
+        <li><a href="./index.html" title="Inicio">Inicio</a></li>
+        <li><a href="./contenidos.html" title="Contenidos">Contenidos</a></li>
+        <li><a href="./contacto.html" title="Contacto">Contacto</a></li>
+        <li><a href="https://dcardonac31.github.io/" target="_blank" title="Portafolio David">Portafolio David</a></li>
+    </ul>
+
+    <hr />
+
+    <!-- Contenidos de index -->
+    <h2>Bienvenidos a mi website</h2>
+    <img src="./imagenes/imagen1.jpg" alt="Universo1" title="Universo1">
+
     <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
         standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
         a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged. It was popularised in the 1960s <span id=" resaltado" class="rojo amarillo">with the release of Letraset sheets containing</span>
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
         Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
+        <br />
+        <br />
+        Where does it come from?
+        <br/>
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+        literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+        College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+        going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum
+        comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
+        Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+        The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+
     </p>
-
-    <h3>Listado de frutas</h3>
-    <ul>
-        <li>Manzana
-            <ul>
-                <li>Roja</li>
-                <li>Verde</li>
-            </ul>
-        </li>
-        <li>Naranja</li>
-        <li>Pere</li>
-        <li>Manzana</li>
-    </ul>
-
-    <h3>Tablas</h3>
-    <table border="1">
-        <tr>
-            <th>Nombre</th>
-            <th>Apellidos</th>
-            <th>Pais</th>
-        </tr>
-        <tr>
-            <td>David</td>
-            <td>Cardona</td>
-            <td>Colombia</td>
-        </tr>
-        <tr>
-            <td>Victor</td>
-            <td>Robles</td>
-            <td>España</td>
-        </tr>
-        <tr>
-            <td>Pedro</td>
-            <td colspan="2">Perez</td>
-        </tr>
-    </table>
-
-    <hr>
-    <h3>Formulario</h3>
-    <form>
-        <p>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" placeholder="Escribe tu nombre"/>
-        </p>
-
-        <p>
-            <label for="descripcion">Descripción</label>
-            <textarea name="descripcion" id="" cols="30" rows="10"></textarea>
-        </p>
-
-        <p>
-            <input type="radio" name="genero" value="hombre"> Hombre <br/>
-            <input type="radio" name="genero" value="mujer"> Mujer <br>
-            <input type="radio" name="genero" value="nada"> Nada <br/>
-        </p>
-
-        <p>
-            <select name="" id="">
-                <option value="hombre">Hombre</option>
-                <option value="mujer">Mujer</option>
-                <option value="nada">Nada</option>
-            </select>
-        </p>
-
-        <p>
-            <input type="submit" value="Enviar Formulario">
-        </p>
-
-
-    </form>
-
 </body>
 
 </html>
